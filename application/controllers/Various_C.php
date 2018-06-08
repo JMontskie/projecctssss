@@ -1,32 +1,78 @@
 <?php
-defined('BASEPATH') OR exit ('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Various_C extends CI_Controller{
-	public function__construct(){
+	function __construct(){
 		parent::__construct();
 		$this->load->model('various_m');
-		$this->load->library('form_validation');
 	}
 
-	// public function index(){
-	// 	$data = array('' => , );
-	// }
-
-	public function view_incoming(){
-		$this->load->view('header');
-		$this->load->view('incoming_var');
-		$this->load->view('footer');
-	}
+	//VIEWS
+	public function view_incoming()
+	{
+		$this->load->view('admin/header');
+		$this->load->view('admin/incoming_var');
+		$this->load->view('admin/footer');
+	}//end of view_incoming
 
 	public function view_outgoing(){
-		$this->load->view('header');
-		$this->load->view('outgoing_var');
-		$this->load->view('footer');
+		$this->load->view('admin/header');
+		$this->load->view('admin/outgoing_var');
+		$this->load->view('admin/footer');
+		
+	}//end of view_outgoing
+
+	//CREATE
+	public function saveIncoming()
+	{
+		$data = $this->various_m->addIncoming();
+		echo json_decode($data);
+	}//end of saveIncoming
+
+	public function saveOutgoing()
+	{
+		$data = $this->various_m->addOutgoing();
+		echo json_decode($data);
 	}
 
-	// public function fetchVarData(){
-	// 	$result = array('data' => array());
+	//READ
+	public function incomingData()
+	{
+		$data=$this->various_m->getIncoming();
+		echo json_encode($data);
+	}//end of incomingData
 
-	// 	$data = $this->various_m->get_view_
-	// }
+	public function outgoingData()
+	{
+		$data=$this->various_m->getOutgoing();
+		echo json_encode($data);
+	}//end of outgoingData
+
+
+	//UPDATE
+	public function updateIncoming()
+	{
+		$data=$this->various_m->editIncoming();
+		echo json_encode($data);
+	}//end of updateIncoming
+
+	public function updateOutgoing()
+	{
+		$data=$this->various_m->editOutgoing();
+		echo json_encode($data);
+	}//end of uodateOutgoing
+
+	//RECEIVE FILES
+	public function receive_Incoming()
+	{
+		$data=$this->various_m->receiveIncoming();
+		echo json_encode($data);
+	}
+
+	public function receive_Outgoing()
+	{
+		$data=$this->various_m->receiveOutgoing();
+		echo json_encode($data);
+	}
+
 }//end of Controller

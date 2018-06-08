@@ -8,9 +8,12 @@
   <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.css" />
   <!-- CUSTOM CSS-->
   <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
+  <!-- HEADER/FOOTER CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/dashboard.css">
    <!-- GOOGLE FONTS-->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+  <!-- DATATABLES -->
+  <link rel="stylesheet" type="text/css" href="datatables.min.css">
 </head>
 <body>
   <body>

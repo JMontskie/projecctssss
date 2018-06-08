@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>NATELCOM</title>
-	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<!-- DATA TABLEs -->
-	<link rel="stylesheet" type="text/css" href="">
-	<!-- BOOTSTRAP -->
-</head>
-<body>
-	<main class="col-md-9 float-left col px-5 pl-md-2 pt-2 main">
-		            <a href="#" data-target="#sidebar" data-toggle="collapse"><i class="fas fa-bars fa-2x py-2 p-1"></i></a>
-		            <div class="page-header">
+
+	
+					<br>
+					<br>
+		            <!-- <a href="#" data-target="#sidebar" data-toggle="collapse"><i class="fas fa-bars fa-2x py-2 p-1"></i></a> -->
+		            <div class="page-header" style="height: relative;">
 		                <h2>National Telecommunications Commission Region-X</h2>
 		            </div>
 		            <p class="lead">Kauswagan, Cagayan de Oro City</p>
@@ -40,6 +32,12 @@
 		                    </div>
 		                </div>
 		            </div>
-	</main>
-</body>
-</html>
+		            	<br>
+		            	<br>
+		            	<br>
+		            	<br>
+		            	<br>
+		            	<br>
+		            	<br>
+		            	<br>
+		            	
